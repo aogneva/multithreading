@@ -1,13 +1,10 @@
 package com.example.demo;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
-import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
-import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 
 @Component

@@ -1,6 +1,6 @@
-package com.example.demo;
+package ru.ogneva.multithreading;
 
-import com.example.demo.node.Node;
+import ru.ogneva.multithreading.node.Node;
 
 import java.util.*;
 import java.util.concurrent.RecursiveTask;

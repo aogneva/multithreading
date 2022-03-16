@@ -1,6 +1,6 @@
-package com.example.demo;
+package ru.ogneva.multithreading;
 
-import com.example.demo.node.AmountNode;
+import ru.ogneva.multithreading.node.AmountNode;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 

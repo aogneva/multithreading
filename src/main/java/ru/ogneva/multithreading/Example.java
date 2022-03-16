@@ -1,4 +1,4 @@
-package com.example.demo;
+package ru.ogneva.multithreading;
 
 public class Example {
 

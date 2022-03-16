@@ -1,4 +1,4 @@
-package com.example.demo.node;
+package ru.ogneva.multithreading.node;
 
 import java.util.Collection;
 

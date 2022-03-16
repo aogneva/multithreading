@@ -1,4 +1,4 @@
-package com.example.demo;
+package ru.ogneva.multithreading;
 
 import java.util.LinkedList;
 import java.util.List;

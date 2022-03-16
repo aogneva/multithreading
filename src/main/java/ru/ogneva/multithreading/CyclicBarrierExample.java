@@ -1,4 +1,4 @@
-package com.example.demo;
+package ru.ogneva.multithreading;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;

@@ -1,4 +1,4 @@
-package com.example.demo;
+package ru.ogneva.multithreading;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;

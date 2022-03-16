@@ -1,5 +1,7 @@
 package ru.ogneva.multithreading;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 public class Example {
 
     public static void main(String[] args) throws InterruptedException {
@@ -34,14 +36,14 @@ public class Example {
     }
 
     static class CounterWrapper {
-        volatile long counter = 0l;
+        volatile AtomicLong counter = new AtomicLong(0l);
 
         public void increment() {
-            counter++;
+            counter.incrementAndGet();
         }
 
         public long getCounter() {
-            return counter;
+            return counter.get();
         }
 
     }

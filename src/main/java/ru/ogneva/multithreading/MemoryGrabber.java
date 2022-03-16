@@ -21,11 +21,15 @@ public class MemoryGrabber {
     }
     private static final int ex1(){
         try {
-//            throw new Exception();
-            return 1;
+            throw new RuntimeException();
         } catch (Exception e) {
+            System.out.println("1");
+            return 1;
+        } catch (Throwable e) {
+            System.out.println("2");
             return 2;
         } finally {
+            System.out.println("3");
             return 3;
         }
     }
@@ -34,7 +38,7 @@ public class MemoryGrabber {
 
     public static void main(String[] args) throws Exception {
         try {
-            System.out.println(ex1());
+            System.out.println("Res: "+ex1());
 //            executor.submit(() -> {
 //                grabAllMemory();
 //            }).get();

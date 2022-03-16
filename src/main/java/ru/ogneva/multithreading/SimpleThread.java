@@ -1,6 +1,5 @@
 package ru.ogneva.multithreading;
 
-import java.sql.Timestamp;
 import java.time.Instant;
 
 public class SimpleThread extends Thread {

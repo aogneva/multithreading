@@ -2,11 +2,10 @@ package ru.ogneva.multithreading.cfuture;
 
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
-public class CFEither {
+public class CFAcceptEither {
     static int PAUSE = 1;
     public static void main(String[] args) {
         Supplier<String> firstSup = () -> {
@@ -36,12 +35,12 @@ public class CFEither {
         CompletableFuture<String> firstCf = CompletableFuture.supplyAsync(firstSup);
 
         firstCf.acceptEither(secondCf, System.out::println);
-        try {
-            firstCf.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            firstCf.get();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } catch (ExecutionException e) {
+//            e.printStackTrace();
+//        }
     }
 }
